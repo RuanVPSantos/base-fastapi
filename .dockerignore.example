@@ -1,0 +1,56 @@
+# Diretórios e arquivos gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Ambientes virtuais
+env/
+venv/
+ENV/
+*.env
+*.env.*
+
+# Arquivos de configuração de IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e arquivos temporários
+*.log
+logs/
+*.out
+*.err
+tmp/
+*.pid
+*.seed
+*.bak
+*.orig
+
+# Dados de cobertura de testes
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+.cache
+
+# Arquivos de build e distribuição
+*.egg-info/
+.eggs/
+dist/
+build/
+*.whl
+
+# Configuração específica de contêineres
+docker-compose.override.yml
+.env.docker
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros
+*.sqlite3
+*.db
