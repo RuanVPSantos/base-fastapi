@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.db.init_db import init_db
 from app.modules.module1.router import router as module1_router
-from app.modules.module2.router import router as module2_router
+# from app.modules.module2.router import router as module2_router
 
 app = FastAPI(title="My FastAPI App", version=settings.API_VERSION)
 
@@ -20,7 +20,7 @@ app.add_middleware(
 
 # Incluindo os módulos
 app.include_router(module1_router, prefix="/module1", tags=["Module 1"])
-app.include_router(module2_router, prefix="/module2", tags=["Module 2"])
+# app.include_router(module2_router, prefix="/module2", tags=["Module 2"])
 
 @app.get("/")
 async def root():
